@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'ciclefina';
+    src: url('Cicle_Fina-webfont.eot');
+    src: url('Cicle_Fina-webfont.eot?#iefix') format('embedded-opentype'),
+    url('Cicle_Fina-webfont.woff2') format('woff2'),
+    url('Cicle_Fina-webfont.woff') format('woff'),
+    url('Cicle_Fina-webfont.ttf') format('truetype'),
+    url('Cicle_Fina-webfont.svg#ciclegordita') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+
+/*
+   Capstone Project
+   
+   Style Sheet for the Layout of The Amazing Brewery
+   Author: Gabriella Ferreira
+   Date:   December 2018
+   
+   Filename: ab_visit.css
+
+*/
+
+/* Heading Styles */
+
+heading#visit h1 {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'ciclefina', 'Century Gothic', Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 0px 0px;
+}
+
+
+/* Article Styles */
+
+article {
+    clear: left;
+    float: left;
+    padding: .6em 45px 20px 45px;
+    position: relative;
+}
+
+
+table#addresses {
+    table-layout: fixed;
+    width: 100%;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    overflow: scroll;
+    border: 2px dashed rgba(245, 173, 39, .8);
+    border-radius: 10px;
+    word-break: break-all;
+}
+
+td, th {
+    padding: 8px;
+}
+
+td {
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+tr:nth-child(even){
+    background-color: rgba(239, 220, 156, .2);
+}
+
+th {
+    padding-top: 12px;
+    text-align: left;
+    background-color: rgba(239, 220, 156, .3);
+    color: rgb(248, 248, 186);
+    height: 50px;
+    font-size: 20px;
+    letter-spacing: .03em;
+}
+
+p#directions {
+    padding-top: 1.3em;
+}
+
+/* Figure & Section Styles */
+
+figure {
+    margin: 25px 0px 25px 45px;
+    width: 55%;
+    border: 2px solid rgba(245, 173, 39, .4);
+    box-shadow: 0px 0px 5px;
+    float: left;
+    clear: left;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figure figcaption {
+    background-color: rgba(239, 220, 156, .2);
+    font-style: italic;
+    padding: 8px;
+    text-align: center;
+    color: rgb(239, 220, 156);
+}
+
+figure img:hover {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+/* Right Column Styles */
+
+section#rightColumn {
+    clear: right;
+    float: right;
+    width: 35%;
+    vertical-align: top;
+}
+
+section#rightColumn p {
+    color: #eae4ce;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-top: 20px;
+    margin-right: 45px;
+    text-align: right;
+}
+
+section#rightColumn p:first-of-type{
+    font-size: 1.2rem;
+    color: #f8c567;
+    line-height: 25px;
+}
+
+
+/* Bottom Section Styles */
+
+.btmhead {
+    font-size: 35px;
+    font-family: 'ciclefina', 'Century Gothic', Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 0px 0px;
+    width: 100%;
+    margin-left: 40%;
+}
+
+section.btmsec {
+    float: left;
+    margin: 0px 0px 40px 0px;
+    display: inline-block;
+}
+
+section#one {
+    margin-left: 37px;
+}
+
+section#three {
+    margin-right: 10px;
+}
+
+
+.btmsec {
+    position: relative;
+    width: 30%;
+}
+
+.event {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ab791b;
+}
+
+.btmsec:hover .overlay {
+    opacity: .9;
+}
+
+.text {
+    color: rgb(248, 248, 186);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

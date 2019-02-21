@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'ciclefina';
+    src: url('Cicle_Fina-webfont.eot');
+    src: url('Cicle_Fina-webfont.eot?#iefix') format('embedded-opentype'),
+    url('Cicle_Fina-webfont.woff2') format('woff2'),
+    url('Cicle_Fina-webfont.woff') format('woff'),
+    url('Cicle_Fina-webfont.ttf') format('truetype'),
+    url('Cicle_Fina-webfont.svg#ciclegordita') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+/*
+ Capstone Project
+ 
+ Home Page of The Amazing Brewery
+ Author: Gabriella Ferreira
+ Date:   December 2018
+ 
+ Filename: ab_reviews.css
+
+*/
+
+/* Heading Styles */
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'ciclefina', 'Century Gothic', Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 0px 0px;
+}
+
+/* Section Styles */
+
+body {
+    background-image: url(sd_back2.png),
+    /* radial gradient circle w/ a size extending to the closest corner and placed at the coordinates
+     (40%, 70%) containing color white stopping at 15% and the next color stopping at 50% */
+    radial-gradient(circle closest-corner at 10% 70%, #c5b8a4 15%, rgba(151, 151, 151, 0) 70%),
+    radial-gradient(circle closest-corner at 90% 30%, #c5b8a4 15%, rgba(0, 0, 0, 0) 45%);
+}
+
+section#center {
+   
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    padding-bottom: 25px;
+    width: 90%;
+}
+
+
+/* Blockquote Styles */
+
+blockquote {
+    background-image: url("ab_quote.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /*blockquote image re-sized to cover up whole block quote*/
+    filter: drop-shadow(10px 10px 3px #333);
+    /* cannot use box-shadow bc it box-shadow can only be applied to block elements */
+}
+
+blockquote {
+    color: #c48a1f;
+    font-size: 1.1em;
+    padding: 10px;
+    margin: 3% 1.5% 10%;
+    float: left;
+    width: 30%;
+}
+
+blockquote p {
+    margin: 0px 15px 15px 15px;
+    padding-bottom: 15px;
+}
+
+blockquote p:first-of-type {
+    margin: 10px 10px 0px 10px;
+}
+
+cite {
+    display: block;
+    margin: 10px auto 50px;
+    text-align: right;
+    width: 70%;
+}
+
+blockquote:hover {
+    -webkit-filter: grayscale(90%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(90%);
+    transition: 1s;
+}
+
+
+

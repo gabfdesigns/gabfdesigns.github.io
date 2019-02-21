@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+/*
+   Capstone Project
+   
+   Style Sheet for the Layout of The Amazing Brewery
+   Author: Gabriella Ferreira
+   Date:   December 2018
+   
+   Filename: ab_home.css
+
+*/
+
+/* Body Styles */
+
+
+
+/* Left Column Styles */
+
+div.leftColumn {
+    clear: left;
+    float: left;
+    padding-top: .6em;
+    padding-left: 40px;
+    padding-right: .6em;
+    width: 70%;
+    position: relative;
+}
+
+div.leftColumn img { /*displays every image in the right column as a block w/a width = to the width of its parent element*/
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+div.leftColumn > nav.bodyimages li { /*sets width of each list item to 1/3 of the width of the navigation list */
+    display: block;
+    float: right;
+    width: 33.333%;
+    height: auto;
+    padding-bottom: .8em;
+}
+
+
+body > header > nav.bodyimages li {
+    width: 33.333%;
+}
+
+nav.bodyimages li {
+    display: block;
+    float: left;
+}
+
+nav.bodyimages a { /*centered link text, and background color exends fully across block rather than confined to link txt */
+    display: block;
+    text-align: center;
+}
+
+nav.bodyimages {
+    clear: both;
+}
+
+nav.bodyimages a {
+    background-color: #0F0E05;
+    font-family: 'ciclegordita', 'Century Gothic', Helvetica, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    letter-spacing: 0.08em;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+nav.bodyimages a:link,
+nav.bodyimages a:visited {
+    color: rgb(239, 220, 156);
+}
+
+nav.bodyimages a:hover,
+nav.bodyimages a:active {
+    background-color: rgba(15, 14, 5, 55%);
+    transition: background-color .5s;
+}
+
+.linkImage:hover,
+.linkImage:active {
+    -webkit-filter: sepia(100%);filter: sepia(100%);
+}
+
+/* Right Column Styles */
+
+section#rightColumn {
+    clear: right;
+    float: right;
+    width: 30%;
+    padding-bottom: .8em;
+}
+
+section#rightColumn p {
+    color: rgb(248, 248, 186);
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-right: 1.1em;
+    text-align: right;
+    padding-left: .1em;
+}
+
+section#rightColumn p:first-of-type{
+    font-size: 18px;
+    color: rgb(245, 173, 39);
+    text-align: center;
+    line-height: 25px;
+}
+
+
+
+
+/*
+ ---------------------------
+ Phone Styles 0-480px
+ ---------------------------
+ */
+
+@media only screen and (max-width: 480px) {
+    section#rightColumn {
+        width: 100%;
+        padding-bottom: 0;
+        clear: both;
+    }
+    section#rightColumn p:nth-of-type(2) {
+        text-align: center;
+        color: black;
+        font-size: 1em;
+    }
+    section#rightColumn p:first-of-type{
+        font-size: 1em;
+        color: rgb(245, 173, 39);
+        text-align: center;
+        line-height: 25px;
+    }
+    
+    section#rightColumn p:nth-of-type(2) {
+        visibility: hidden;
+    }
+    
+    
+    div.leftColumn {
+        width: 100;
+    }
+    
+    div.leftColumn img { /*displays every image in the right column as a block w/a width = to the width of its parent element*/
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    div.leftColumn > nav.bodyimages li { /*sets width of each list item to 25% of the width of the navigation list */
+        display: block;
+        float: right;
+        width: 33.333%;
+        height: auto;
+        padding-bottom: .8em;
+    }
+    
+    
+    nav.bodyimages li {
+        display: block;
+        float: left;
+    }
+    
+    nav.bodyimages a { /*centered link text, and background color exends fully across block rather than confined to link txt */
+        display: block;
+        text-align: center;
+    }
+    
+    nav.bodyimages {
+        clear: both;
+    }
+}
+

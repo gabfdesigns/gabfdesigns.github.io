@@ -1,0 +1,360 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'ciclegordita';
+    src: url('Cicle_Gordita-webfont.eot');
+    src: url('Cicle_Gordita-webfont.eot?#iefix') format('embedded-opentype'),
+    url('Cicle_Gordita-webfont.woff2') format('woff2'),
+    url('Cicle_Gordita-webfont.woff') format('woff'),
+    url('Cicle_Gordita-webfont.ttf') format('truetype'),
+    url('Cicle_Gordita-webfont.svg#ciclegordita') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+/*
+    Capstone Project
+ 
+    Home Page of The Amazing Brewery
+    Author: Gabriella Ferreira
+    Date:   December 2018
+   
+   Typography and Color Styles for all ab_....html pages
+   
+   Filename: ab_styles1.css
+
+*/
+
+/* HTML and Body & (nav bar), and Footer Styles */
+
+html {
+    background-color: #AB9569;
+    font-family: Tahoma, Geneva, sans-serif;
+    background-image: url(stripes.png);
+    background-size: 25% 25%;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+body {
+   background-color: #665C47;
+   box-shadow: rgb(71, 71, 71) 15px 0px 25px,
+                rgb(71, 71, 71) -15px 0px 25px;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;    /* margin-left and margin-right "auto" forces
+                            block elements to be centered w/in parent*/
+    max-width: 100%;
+    width: 83%;
+}
+
+
+body::after { /* keeps body from collapsing */
+    clear: both;
+    content: "";
+    display: table;
+}
+
+/* Body Header Styles */
+
+body > header {
+    height: 125px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+body > header > img {    /* sets display type & width of logo img */
+    display: block;
+    margin-left: .5em;
+    margin-right: auto;
+    padding-top: 1em;
+    margin-bottom: 1em;
+    float: left;
+    /* following scales down if it has to, but never scales up larger than selected width below */
+    max-width: 40%;
+    height: auto;
+    filter: drop-shadow(3px 5px 2px #333);
+}
+
+body > header > nav.toplinks {
+    float: right;
+    margin-top: .5em;
+    width: 40%;
+    text-shadow: rgb(51, 51, 51) 3px 6px 5px;
+    max-width: 40%;
+    height: auto;
+}
+
+body > header > nav.toplinks li {
+    font-family: 'ciclegordita', 'Century Gothic', Helvetica, sans-serif;
+    font-size: 1.4em;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+
+
+        /* Styles the links inside the navigation bar */
+body > header > nav.toplinks a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.toplinks a:link,
+.toplinks a:visited {
+    color: rgb(239, 220, 156);
+}
+
+.toplinks a:hover, /* Styles the "active" element to highlight the current page */
+.toplinks a:active {
+    background-color: rgba(15, 14, 5, 30%);
+    transition: background-color .5s;
+}
+
+
+.toplinks input[type=text] { /* Styles the search box inside the navigation bar */
+    float: right;
+    padding: 4px;
+    border: none;
+    margin-top: 7px;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+
+
+
+/* Horizontal Navigation Styles */
+
+body > header > nav.horizontalNavigation li {
+    width: 16.66666%;
+    overflow: auto;
+}
+
+nav.horizontalNavigation li {
+    display: block;
+    float: left;
+}
+
+nav.horizontalNavigation a { /*centered link text, and background color exends fully across block rather than confined to link txt */
+display: block;
+text-align: center;
+}
+
+
+nav.horizontalNavigation {
+    clear: both;
+}
+
+nav.horizontalNavigation a {
+   background-color: #0F0E05;
+   font-family: 'ciclegordita', 'Century Gothic', Helvetica, sans-serif;
+   font-size: 1.4em;
+   line-height: 1.8em;
+   letter-spacing: 0.05em;
+   text-align: center;
+   text-transform: lowercase;
+}  
+
+nav.horizontalNavigation a:link, 
+nav.horizontalNavigation a:visited {
+   color: rgb(239, 220, 156);
+}
+
+nav.horizontalNavigation a:hover, 
+nav.horizontalNavigation a:active {
+   background-color: rgba(15, 14, 5, 55%);
+   transition: background-color .5s;
+}   
+
+
+/* Floating Icon Bar Styles */
+
+.icon-bar {
+    float: right;
+    position: fixed;
+    margin-right:10px;
+    height:30px;
+    top: 40%;
+    -webkit-transform: translateX(0%);
+}
+
+.icon-bar img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    z-index: 99;
+    display: block;
+    padding: 1px;
+}
+
+
+
+/* Footer Styles */
+
+body > footer {
+   font-size: .9em;
+   color: rgb(186, 186, 156);
+   background-color: #0F0E05;
+   padding-left: 20px;
+}
+
+body > footer h1 {
+   color: rgb(248, 248, 186);
+   font-size: 1.4em;
+   font-weight: normal;
+   letter-spacing: 0.1em;
+   margin: 1em 0 0.5em .8em;
+   text-transform: uppercase;
+   font-family: 'ciclegordita', 'Century Gothic', Helvetica, sans-serif;
+}
+
+footer {
+    clear: both;
+    background-color: #0F0E05;
+}
+
+
+footer img {
+    float: right;
+    border-radius: 50%;
+    padding-top: .3em;
+    padding-right: .3em;
+    padding-bottom: .3em;
+    max-width: 30%;
+    height: auto;
+}
+
+
+footer > nav.verticalNavigation {
+    float: left;
+    width: 20%;
+}
+
+/* Footer Vertical Navigation Styles */
+
+nav.verticalNavigation ul {
+   margin-left: 1em;
+   line-height: 2em;
+}
+
+footer a:link,
+footer a:visited {
+   color: rgb(245, 173, 39);
+   text-decoration: none;
+}
+
+footer a:hover,
+footer a:active {
+    color: rgba(245, 173, 39, 40%);
+    transition: color .5s;
+    text-decoration: none;
+}
+
+
+/* Footer Location and Copyright Styles */
+
+section#Location p {
+   line-height: 1em;
+   margin: 1em;
+}
+
+footer > section#Location {
+    float: left;
+    width: 25%;
+}
+
+footer::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+p#copyright {
+    clear: right;
+    padding-top: 2em;
+    clear: left;
+    text-align: center;
+    font-size: 13px;
+    text-align: bottom;
+    margin-bottom: 10px;
+}
+
+
+/* ================
+ Base Flex Styles
+ ================
+ */
+
+
+
+
+/*
+ ---------------------------
+ Tablet Styles 481px +
+ ---------------------------
+ */
+
+@media only screen and (max-width: 700px) {
+    body {
+        width: 100%;
+    }
+    
+    .icon-bar {
+        visibility: hidden;
+    }
+}
+
+/*
+ ---------------------------
+ Phone Styles 0-480px
+ ---------------------------
+ */
+
+@media only screen and (max-width: 480px) {
+    /* body becomes whole */
+    body {
+        width: 100%;
+    }
+    
+    body > header {
+        height: 15em;
+    }
+    
+    header > img {
+        width: 100% /* ????? won't work???? */
+        -webkit-order: 1;
+        order: 1;
+    }
+    
+    .toplinks {
+        visibility: hidden;
+    }
+    
+    nav.horizontalNavigation li {
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+    
+    
+    .icon-bar {
+        visibility: hidden;
+    }
+    
+    #logo {
+        visibility: hidden;
+    }
+    
+}
+

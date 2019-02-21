@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+    Capstone Project
+    
+    Home Page of The Amazing Brewery
+	Author: Gabriella Ferreira
+	Date:   December 2018
+
+    Filename: ab_contact.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="keywords" content="beer, brewery, brooklyn, korea, hops" />
+   <title>Amazing Brewery</title>
+   
+    <link href = "ab_reset.css" rel="stylesheet"/>
+    <!--reset style sheet should ALWAYS be first to ensure that default
+		styles are applied first-->
+   <link href = "ab_styles1.css" rel="stylesheet"/>
+   <link href = "ab_contact.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+   <header>
+      <img src="abrew_logo.png" alt="The Amazing Brewery" />
+      <nav  class ="toplinks">
+          <ul>
+          <li><a href="ab_contact.html">join us</a></li>
+          <li><input type="text" placeholder="search"></li>
+          </ul>
+        </nav>
+      
+      <nav class="horizontalNavigation">
+         <ul>
+            <li><a class="active" href="ab_home.html">Home</a></li>
+            <li><a href="ab_beers.html">Beers</a></li>
+            <li><a href="ab_visit.html">Visit</a></li>
+            <li><a href="ab_reviews.html">Reviews</a></li>
+            <li><a href="ab_distributors.html">Distributors</a></li>
+            <li><a href="ab_contact.html">Contact</a></li>
+         </ul>
+      </nav>
+   </header>
+   
+
+   
+   <div class="icon-bar">
+       <a target="_blank" rel="nofollow" href="http://www.instagram.com/amazingbrewerybk" title="Instagram"><img alt="Instagram" src="instaicon.png" />
+            </a>
+       <a target="_blank" rel="nofollow" href="http://www.facebook.com/amazingbrewerybk" title="Facebook"><img alt="Facebook" src="fbicon.png" />
+            </a>
+       <a target="_blank" rel="nofollow" href="http://www.twitter.com/amazingbrewerybk" title="Twitter"><img alt="Twitter" src="twittericon.png" />
+            </a>
+       <!-- Icons made by Simple Icons & Elegant Themes from www.flaticon.com -->
+   </div>
+   
+   <heading id="contact">
+       <h1>Contact Us</h1>
+       </heading>
+   
+   <section id="leftsection">
+       <figure><img src="abrew_seating.png" alt="brewery seating"/>
+       </figure>
+   </section>
+   
+   
+   <section id="rightsection">
+       <div class="container demo-bg">
+           <div class="row">
+               <div class="col-sm-4"></div>
+               <div class="col-sm-4"></div>
+               <div class="col-sm-4">
+                   <div class="business-hours">
+                       <h2 class="title">Operating Hours</h2>
+                       <ul class="list-unstyled opening-hours">
+                           <li>Sunday - <span class="pull-right">14:00-23:00</span></li>
+                           <li>Monday - <span class="pull-right">Closed</span></li>
+                           <li>Tuesday - <span class="pull-right">Closed</span></li>
+                           <li>Wednesday - <span class="pull-right">14:00-23:00</span></li>
+                           <li>Thursday - <span class="pull-right">14:00-24:00</span></li>
+                           <li>Friday - <span class="pull-right">14:00-24:00</span></li>
+                           <li>Saturday - <span class="pull-right">14:00-24:00</span></li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+   
+   <section>
+       <div class="container">
+           <form action="action_page.php">
+               <div class="row">
+                   <div class="col-25">
+                       <label for="fname">First Name</label>
+                   </div>
+                   <div class="col-75">
+                       <input type="textc" id="fname" name="firstname" placeholder="Your name..">
+                           </div>
+               </div>
+               <div class="row">
+                   <div class="col-25">
+                       <label for="email">Email</label>
+                   </div>
+                   <div class="col-75">
+                       <input type="textc" id="email" name="email" placeholder="Your email..">
+                           </div>
+               </div>
+               <div class="row">
+                   <div class="col-25">
+                       <label for="country">Inquiry</label>
+                   </div>
+                   <div class="col-75">
+                       <select id="inquiry" name="inquiry">
+                           <option value="general">General</option>
+                           <option value="sales">Sales</option>
+                           <option value="marketing">Marketing</option>
+                       </select>
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="col-25">
+                       <label for="subject">Subject</label>
+                   </div>
+                   <div class="col-75">
+                       <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                   </div>
+               </div>
+               <div class="row">
+                   <input type="submit" value="Submit">
+                       </div>
+           </form>
+       </div>
+   
+   
+   
+   
+   
+   
+   </section>
+   
+   
+   <footer>
+       <section id="Location">
+           <h1>Location</h1>
+           <p>65 Porter Ave. </p>
+           <p>Brooklyn, NY 11237</p>
+           <p><a href = "tel:718-888-8877">Call Us</a></p>
+           <p><a href = "mailto:info@amazingbrewery.com">Email Us</a></p>
+        </section>
+       
+      <nav class="verticalNavigation">
+         <h1>Media</h1>
+         <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Tumblr</a></li>
+         </ul>
+      </nav>
+
+      <nav class="verticalNavigation">
+         <h1>Services</h1>
+         <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Job Opportunities</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+         </ul>
+      </nav>
+      
+      <section id="logo"> <img src="abrew_logo2.jpg" alt=""/>
+      </section>
+      <p>
+      </p>
+       <p id="copyright">Copyright &copy; 2018 Gabriella Ferreira</p>
+       
+   </footer>
+   
+</body>
+</html>

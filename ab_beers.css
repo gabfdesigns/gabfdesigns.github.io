@@ -1,0 +1,229 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'ciclefina';
+    src: url('Cicle_Fina-webfont.eot');
+    src: url('Cicle_Fina-webfont.eot?#iefix') format('embedded-opentype'),
+    url('Cicle_Fina-webfont.woff2') format('woff2'),
+    url('Cicle_Fina-webfont.woff') format('woff'),
+    url('Cicle_Fina-webfont.ttf') format('truetype'),
+    url('Cicle_Fina-webfont.svg#ciclegordita') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+/*
+   Capstone Project
+   
+   Style Sheet for the Layout of The Amazing Brewery
+   Author: Gabriella Ferreira
+   Date:   December 2018
+   
+   Filename: ab_beers.css
+
+*/
+
+/* heading styles */
+
+p#heading {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'ciclefina', 'Century Gothic', Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 0px 0px;
+}
+
+figure{
+    margin: 15px auto 0px;
+    width: 65%;
+    border: 2px solid rgba(245, 173, 39, .4);
+    box-shadow: 0px 0px 5px;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+}
+
+figure figcaption {
+    background-color: rgba(239, 220, 156, .2);
+    font-style: italic;
+    padding: 8px;
+    text-align: center;
+    color: rgb(239, 220, 156);
+}
+
+
+
+/* Section Styles */
+
+article section {
+    margin: 45px;
+    border: 2px dashed rgba(245, 173, 39, .8);
+    border-radius: 10px;
+    overflow: auto;
+    background-color: rgba(239, 220, 156, .2);
+    box-shadow: #483C32 5px 5px 10px 4px;
+}
+
+section.beers h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 10px 10px 10px 10px;
+    font-size: 45px;
+    font-family: 'ciclefina', 'Century Gothic', Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+section.beers p {
+    margin-bottom: 6px;
+    margin: 0 10px 0 10px;
+    font-size: 17px;
+    font-family: Helvetica, sans-serif;
+    line-height: 1.2em;
+}
+
+section#beer1 {
+    background: linear-gradient(270deg, #c7858c,
+                                rgba(249, 167, 176, .2) 45%);
+}
+
+
+section#beer1 h1 {
+    color: #F9A7B0;
+    text-shadow: 0px 0px 27px;
+}
+
+section#beer2 {
+    text-align: right;
+    background: linear-gradient(90deg, #c5b8a4,
+                                rgba(247, 231, 206, .2) 45%);
+}
+
+section#beer2 h1 {
+    color: #F7E7CE;
+    text-shadow: 0px 0px 27px;
+}
+
+section#beer3 {
+    background: linear-gradient(270deg, #ccaf46,
+                                        rgba(255, 219, 88, .2) 45%);
+}
+
+section#beer3 h1 {
+    color: #FFDB58;
+    text-shadow: 0px 0px 27px;
+}
+
+section#beer4 {
+    text-align: right;
+    background: linear-gradient(90deg, #b48558,
+                                        rgba(226, 167, 111 , .2) 45%);
+}
+
+section#beer4 h1 {
+    color: #E2A76F;
+    text-shadow: 0px 0px 27px;
+}
+
+
+/* Description List Styles */
+
+dt {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+dd {
+    font-size: 1.1em;
+    margin-bottom: 2px;
+}
+
+
+/* LAYOUT */
+
+
+    /* Section Styles */
+
+section {
+    clear: right;
+}
+
+    /* Description List Styles */
+
+dl {
+    text-align: center;
+    line-height: 1.1em;
+}
+
+dl a img:hover,
+dl a img:active {
+    color: rgba(245, 173, 39, 40%);
+    transition: color .5s;
+    text-decoration: none;
+}
+
+dl.right {
+    float: right;
+    width: 40%;
+    margin: 0 0 4% 4%;
+}
+
+dl.left {
+    float: left;
+    width: 40%;
+    margin: 0 4% 4% 0;
+}
+
+
+/* Untapped Icons Styles */
+
+.untap:hover {
+    width: 50px;
+    height: 50px;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+
+
+/* Image Style @ Bottom of Article */
+
+.bottompics {
+    width: 88%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottompics img { /*sets image correctly within body */
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.bottompics img:hover {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: .5s;
+}
+
+
+.bottompics > nav.bodyimages li { /*sets width of each list item to 25% of the width of the navigation list */
+    display: block;
+    width: 50%;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+body > header > nav.bodyimages li {
+    width: 33.333%;
+}
+
+nav.bodyimages li {
+    display: block;
+    float: left;
+}
